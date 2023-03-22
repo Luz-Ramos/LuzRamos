@@ -1,0 +1,160 @@
+/* ESTILOS PARA MOBILE SCREEN */
+@media only screen and (max-width: 600px){
+
+   .col-4 img{
+    width: 200px;
+   }
+
+
+
+}
+
+
+/* ESTILOS PARA DESKTOP SCREEN */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(215, 192, 238);
+
+}
+h1{
+    padding:20px;
+    text-align: center;
+    color:rgb(63, 61, 65);
+}
+.p1{
+    padding: 20px;
+    line-height: 1.5;
+    width: 300px;
+    height: 400px;
+    overflow:auto;
+    border:solid 3px rgb(160, 87, 202);
+    margin:20px auto;
+}
+.p2{
+    width: 700px;
+    padding: 20px;
+    color:rgb(86, 23, 99);
+    border-top: dashed red;	border-right:solid 10px cyan;
+    border-bottom:dotted 7px green;
+    border-left:solid 12px yellow;
+    margin:30px;
+    border-radius: 10%;
+
+}
+img{
+    display: block;
+    margin:10px
+}
+h3{
+    display: inline-block;
+    padding: 20px;
+}
+.none{
+    display:none;
+}
+.caja{
+    width: 100px;
+    height: 100px;
+    margin:30px;
+}
+.positions{
+    position:relative
+
+}
+.scroll{
+    height: 500px;
+}
+/*a partir de aca el estilo del menu*/
+.menu{
+    background-color: rgb(53, 0, 83);
+    list-style: none;
+    margin:20px auto;
+    text-align: center;
+}
+.menu li{
+    display: inline-block;
+    text-align: center;
+}
+.menu li a{
+    padding: 20px;
+    margin:10px;
+    color: rgb(153, 148, 152);
+    text-decoration: none;
+    display:inline-block;
+}
+.menu li a:hover{
+    color:black;
+    background-color: rgb(235, 174, 230);
+    border-radius: 50%;
+}
+
+
+
+.contenedor{
+    background-color: rgba(255, 255, 255, 0.288);
+    width: 90%;
+    height: vh;
+    
+    text-align: center;
+    margin: 20px auto;
+    /*a partir de aca se transforma en grid*/
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: repeat(3 1fr);
+    gap:10px;
+    grid-template-areas:
+    "ABC ABC ABC"
+    "DG E F"
+    "DG HI HI" ;
+
+}
+.hijo{
+    border:2px red solid;
+    background-color: #5454c0;
+   
+}
+.ABC{
+    grid-area: ABC;
+    text-align: center;
+}
+
+.E{
+    background-color: red;
+    grid-area: E;
+}
+.F{
+    background-color: #34b92b;
+    grid-area: F;
+}
+.DG{
+    background-color: #00ffea;
+    grid-area: DG;
+}
+
+.HI{
+    background-color: #9500ff;
+    grid-area: HI;
+}
+.ABC h3{
+   text-align: center;
+   margin: 5px;
+}
+.logosfooter img{ 
+    height: auto;
+    width: 50px;
+}
+.logosfooter {
+    display: flex;
+    justify-content: center;
+}
+.logosfooter img:hover{ 
+    width: 60px;
+}
+.col-4 img:hover{
+    box-shadow: 0px 0px 15px -3px rgba(0, 0, 0, 0.295);
+   }
